@@ -267,7 +267,15 @@ export const defaultConfig: SupaChatConfig = {
   supabaseAnonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
   localStorageKey: "supachat-store",
 
-  // Welcome messages
+  // Avatar Configuration
+  adminAvatar: "/admin-avatar.png",
+  userAvatar: "/user-avatar.png",
+
+  // Widget Configuration
+  chatWidgetPosition: "bottom-right",
+  chatWidgetSize: { width: 400, height: 650 },
+
+  // Message Configuration
   welcomeMessages: [
     {
       content:
@@ -288,32 +296,28 @@ export const defaultConfig: SupaChatConfig = {
       ],
     },
   ],
+  maxMessageLength: 2000,
+  agentTypingDelay: 800,
+  inputLockedAfterSend: true,
 
-  // Features
+  // Feature Configuration
   enableUploads: true,
   enableEmojis: true,
   enablePresence: true,
+  autoAssignAdmin: true,
 
-  // Behavior
-  agentTypingDelay: 800,
-  inputLockedAfterSend: true,
-  maxMessageLength: 2000,
-
-  // Widget settings
-  chatWidgetPosition: "bottom-right",
-  chatWidgetSize: { width: 400, height: 650 },
-
-  // File upload settings
+  // File Upload Configuration
   maxFileSize: 10 * 1024 * 1024, // 10MB
   allowedFileTypes: ["image/*", "application/pdf", "text/*"],
 
-  // Admin settings
+  // Admin Configuration
   adminRole: "admin",
-  autoAssignAdmin: true,
 
-  // Session settings
-  guestSessionExpiry: 24 * 60 * 60 * 1000, // 24 hours
+  // Theme Configuration
   theme: "system",
+
+  // Session Configuration
+  guestSessionExpiry: 24 * 60 * 60 * 1000, // 24 hours
 };
 ```
 
@@ -322,6 +326,8 @@ export const defaultConfig: SupaChatConfig = {
 ```tsx
 // Override defaults in components
 <ChatWidget
+  adminAvatar="/custom-admin.png"
+  userAvatar="/custom-user.png"
   enableUploads={false}
   agentTypingDelay={2000}
   theme="dark"
@@ -707,6 +713,9 @@ interface ChatMessage {
 interface SupaChatConfig {
   supabaseUrl: string;
   supabaseAnonKey: string;
+  localStorageKey: string;
+  adminAvatar?: string;
+  userAvatar?: string;
   welcomeMessages?: WelcomeMessage[];
   enableUploads?: boolean;
   enableEmojis?: boolean;
