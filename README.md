@@ -37,7 +37,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 Run the SQL schema in your Supabase SQL Editor:
 
-View the schema here: [supachat-schema.sql](registry\supachat\migrations\supabase\supachat-schema.sql)
+View the schema here: [supachat-schema.sql](registry/supachat/migrations/supabase/supachat-schema.sql)
 
 ### Basic Usage
 
