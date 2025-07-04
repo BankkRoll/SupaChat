@@ -1,0 +1,217 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "supachat-registry",
+  "homepage": "https://supachat.site",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "supachat",
+      "type": "registry:block",
+      "title": "Supabase-Powered Realtime Chat",
+      "description": "Production-grade chat system with full source control, Supabase realtime, admin panel, and file uploads.",
+      "author": "Bankk <https://bankkroll.xyz>",
+      "dependencies": [
+        "@supabase/supabase-js",
+        "@supabase/ssr",
+        "react-markdown",
+        "date-fns",
+        "lucide-react",
+        "clsx",
+        "tailwind-merge",
+        "zod",
+        "react-dropzone",
+        "emoji-datasource"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "card",
+        "avatar",
+        "badge",
+        "scroll-area",
+        "textarea",
+        "dropdown-menu",
+        "popover",
+        "separator",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "registry/supachat/components/ui/avatar.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/avatar.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/badge.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/badge.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/button.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/button.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/card.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/card.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/dropdown-menu.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/dropdown-menu.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/input.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/input.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/popover.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/popover.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/scroll-area.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/scroll-area.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/separator.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/separator.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/sheet.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/sheet.tsx"
+        },
+        {
+          "path": "registry/supachat/components/ui/textarea.tsx",
+          "type": "registry:component",
+          "target": "~/components/ui/textarea.tsx"
+        },
+        {
+          "path": "registry/supachat/components/chat-widget.tsx",
+          "type": "registry:component",
+          "target": "~/components/supachat/chat-widget.tsx"
+        },
+        {
+          "path": "registry/supachat/components/admin-panel.tsx",
+          "type": "registry:component",
+          "target": "~/components/supachat/admin-panel.tsx"
+        },
+        {
+          "path": "registry/supachat/components/message-bubble.tsx",
+          "type": "registry:component",
+          "target": "~/components/supachat/message-bubble.tsx"
+        },
+        {
+          "path": "registry/supachat/components/typing-indicator.tsx",
+          "type": "registry:component",
+          "target": "~/components/supachat/typing-indicator.tsx"
+        },
+        {
+          "path": "registry/supachat/components/file-upload.tsx",
+          "type": "registry:component",
+          "target": "~/components/supachat/file-upload.tsx"
+        },
+        {
+          "path": "registry/supachat/components/emoji-picker.tsx",
+          "type": "registry:component",
+          "target": "~/components/supachat/emoji-picker.tsx"
+        },
+        {
+          "path": "registry/supachat/hooks/use-chat.ts",
+          "type": "registry:hook",
+          "target": "~/hooks/supachat/use-chat.ts"
+        },
+        {
+          "path": "registry/supachat/hooks/use-chat-status.ts",
+          "type": "registry:hook",
+          "target": "~/hooks/supachat/use-chat-status.ts"
+        },
+        {
+          "path": "registry/supachat/hooks/use-admin.ts",
+          "type": "registry:hook",
+          "target": "~/hooks/supachat/use-admin.ts"
+        },
+        {
+          "path": "registry/supachat/lib/types.ts",
+          "type": "registry:lib",
+          "target": "~/lib/supachat/types.ts"
+        },
+        {
+          "path": "registry/supachat/lib/config.ts",
+          "type": "registry:lib",
+          "target": "~/lib/supachat/config.ts"
+        },
+        {
+          "path": "registry/supachat/lib/utils.ts",
+          "type": "registry:lib",
+          "target": "~/lib/utils.ts"
+        },
+        {
+          "path": "registry/supachat/lib/supabase/client.ts",
+          "type": "registry:lib",
+          "target": "~/lib/supabase/client.ts"
+        },
+        {
+          "path": "registry/supachat/lib/supabase/server.ts",
+          "type": "registry:lib",
+          "target": "~/lib/supabase/server.ts"
+        },
+        {
+          "path": "registry/supachat/lib/supabase/middleware.ts",
+          "type": "registry:lib",
+          "target": "~/lib/supabase/middleware.ts"
+        },
+        {
+          "path": "registry/supachat/middleware.ts",
+          "type": "registry:file",
+          "target": "~/src/middleware.ts"
+        },
+        {
+          "path": "registry/supachat/migrations/supabase/supachat-schema.sql",
+          "type": "registry:file",
+          "target": "~/migrations/supabase/supachat-schema.sql"
+        },
+        {
+          "path": "registry/supachat/supachat-setup.md",
+          "type": "registry:file",
+          "target": "~/supachat-setup.md"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "chat-primary": "222.2 84% 4.9%",
+          "chat-primary-foreground": "210 40% 98%",
+          "chat-secondary": "210 40% 96%",
+          "chat-secondary-foreground": "222.2 84% 4.9%",
+          "chat-muted": "210 40% 96%",
+          "chat-muted-foreground": "215.4 16.3% 46.9%",
+          "chat-accent": "210 40% 96%",
+          "chat-accent-foreground": "222.2 84% 4.9%",
+          "chat-border": "214.3 31.8% 91.4%",
+          "chat-input": "0 0% 100%",
+          "chat-ring": "222.2 84% 4.9%"
+        },
+        "dark": {
+          "chat-primary": "210 40% 98%",
+          "chat-primary-foreground": "222.2 84% 4.9%",
+          "chat-secondary": "217.2 32.6% 17.5%",
+          "chat-secondary-foreground": "210 40% 98%",
+          "chat-muted": "217.2 32.6% 17.5%",
+          "chat-muted-foreground": "215 20.2% 65.1%",
+          "chat-accent": "217.2 32.6% 17.5%",
+          "chat-accent-foreground": "210 40% 98%",
+          "chat-border": "217.2 32.6% 17.5%",
+          "chat-input": "222.2 84% 4.9%",
+          "chat-ring": "212.7 26.8% 83.9%"
+        }
+      },
+      "docs": "🎉 SupaChat installed successfully!\n\n📋 Next steps:\n1. Run the SQL schema in your Supabase SQL Editor\n2. Add your Supabase keys to .env.local\n3. Add <ChatWidget /> to your layout\n4. Create an admin page with <AdminPanel />\n5. Middleware automatically protects admin routes\n6. Customize the configuration as needed\n\n📖 See supachat-setup.md for detailed instructions.",
+      "categories": ["chat", "realtime", "supabase", "admin", "messaging"]
+    }
+  ]
+}
