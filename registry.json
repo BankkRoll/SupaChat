@@ -8,7 +8,7 @@
       "name": "supachat",
       "type": "registry:block",
       "title": "Supabase-Powered Realtime Chat",
-      "description": "Production-grade chat system with full source control, Supabase realtime, admin panel, and file uploads.",
+      "description": "Realtime chat system with full source control, Supabase realtime, admin panel, file uploads. emojis, and more.",
       "author": "Bankk <https://bankkroll.xyz>",
       "dependencies": [
         "@supabase/supabase-js",
@@ -36,61 +36,6 @@
         "sheet"
       ],
       "files": [
-        {
-          "path": "registry/supachat/components/ui/avatar.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/avatar.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/badge.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/badge.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/button.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/button.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/card.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/card.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/dropdown-menu.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/dropdown-menu.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/input.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/input.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/popover.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/popover.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/scroll-area.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/scroll-area.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/separator.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/separator.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/sheet.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/sheet.tsx"
-        },
-        {
-          "path": "registry/supachat/components/ui/textarea.tsx",
-          "type": "registry:component",
-          "target": "~/components/ui/textarea.tsx"
-        },
         {
           "path": "registry/supachat/components/chat-widget.tsx",
           "type": "registry:component",
@@ -210,7 +155,7 @@
           "chat-ring": "212.7 26.8% 83.9%"
         }
       },
-      "docs": "🎉 SupaChat installed successfully!\n\n📋 Next steps:\n1. Run the SQL schema in your Supabase SQL Editor\n2. Add your Supabase keys to .env.local\n3. Add <ChatWidget /> to your layout\n4. Create an admin page with <AdminPanel />\n5. Middleware automatically protects admin routes\n6. Customize the configuration as needed\n\n📖 See supachat-setup.md for detailed instructions.",
+      "docs": "╔══════════════════════════════════════════════════════════════════════════════╗\n║                           🚀 SupaChat Installed!                            ║\n╚══════════════════════════════════════════════════════════════════════════════╝\n\n📋 Quick Setup (3 steps):\n\n1️⃣ Database Setup\n   • Open your Supabase dashboard\n   • Go to SQL Editor\n   • Run: migrations/supabase/supachat-schema.sql\n\n2️⃣ Environment Configuration\n   • Create .env.local in your project root\n   • Add your Supabase keys:\n     NEXT_PUBLIC_SUPABASE_URL=your_url\n     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key\n\n3️⃣ Component Integration\n   • Add <ChatWidget /> to your layout\n   • Create admin page with <AdminPanel />\n   • Middleware auto-protects admin routes\n\n🔗 Quick Links:\n   • Setup Guide: supachat-setup.md\n   • Documentation: https://supachat.site\n   • Open Source: https://github.com/bankkroll/supachat",
       "categories": ["chat", "realtime", "supabase", "admin", "messaging"]
     }
   ]
