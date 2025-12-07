@@ -114,7 +114,7 @@
         {
           "path": "registry/supachat/middleware.ts",
           "type": "registry:file",
-          "target": "~/src/middleware.ts"
+          "target": "~/middleware.ts"
         },
         {
           "path": "registry/supachat/migrations/supabase/supachat-schema.sql",
@@ -155,7 +155,7 @@
           "chat-ring": "212.7 26.8% 83.9%"
         }
       },
-      "docs": "╔══════════════════════════════════════════════════════════════════════════════╗\n║                           🚀 SupaChat Installed!                            ║\n╚══════════════════════════════════════════════════════════════════════════════╝\n\n📋 Quick Setup (3 steps):\n\n1️⃣ Database Setup\n   • Open your Supabase dashboard\n   • Go to SQL Editor\n   • Run: migrations/supabase/supachat-schema.sql\n\n2️⃣ Environment Configuration\n   • Create .env.local in your project root\n   • Add your Supabase keys:\n     NEXT_PUBLIC_SUPABASE_URL=your_url\n     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key\n\n3️⃣ Component Integration\n   • Add <ChatWidget /> to your layout\n   • Create admin page with <AdminPanel />\n   • Middleware auto-protects admin routes\n\n🔗 Quick Links:\n   • Setup Guide: supachat-setup.md\n   • Documentation: https://supachat.site\n   • Open Source: https://github.com/bankkroll/supachat",
+      "docs": "╔══════════════════════════════════════════════════════════════════════════════╗\n║                           🚀 SupaChat Installed!                             ║\n╚══════════════════════════════════════════════════════════════════════════════╝\n\n📋 Quick Setup (3 steps):\n\n1️⃣ Database Setup\n   • Open your Supabase dashboard\n   • Go to SQL Editor\n   • Run: migrations/supabase/supachat-schema.sql\n\n2️⃣ Environment Configuration\n   • Create .env.local in your project root\n   • Add your Supabase keys:\n     NEXT_PUBLIC_SUPABASE_URL=your_url\n     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key\n\n3️⃣ Component Integration\n   • Add <ChatWidget /> to your layout\n   • Create admin page with <AdminPanel />\n   • Middleware auto-protects admin routes\n\n🔗 Quick Links:\n   • Setup Guide: supachat-setup.md\n   • Documentation: https://supachat.site\n   • Open Source: https://github.com/bankkroll/supachat",
       "categories": ["chat", "realtime", "supabase", "admin", "messaging"]
     }
   ]
